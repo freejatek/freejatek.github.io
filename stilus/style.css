@@ -359,7 +359,7 @@ button{
     text-align: center;
     font-size: 40px;
 }
-iframe{
+#iframe{
     border: 0px black solid;
     height: 155vh;
     width: 100%;
@@ -431,70 +431,70 @@ iframe{
   }
   @media only screen and (max-height: 1378px){
 
-    iframe{
+    #iframe{
         height: 120vh;
     }
 
   }
   @media only screen and (max-height: 1282px){
 
-    iframe{
+    #iframe{
         height: 120vh;
     }
 
   }
   @media only screen and (max-height: 1180px){
 
-    iframe{
+    #iframe{
         height: 130vh;
     }
 
   }
   @media only screen and (max-height: 1024px){
 
-    iframe{
+    #iframe{
         height: 160vh;
     }
 
   }
   @media only screen and (max-height: 950px){
 
-    iframe{
+    #iframe{
         height: 170vh;
     }
 
   }
   @media only screen and (max-height: 900px){
 
-    iframe{
+    #iframe{
         height: 190vh;
     }
 
   }
   @media only screen and (max-height: 800px){
 
-    iframe{
+    #iframe{
         height: 220vh;
     }
 
   }
   @media only screen and (max-height: 720px){
 
-    iframe{
+    #iframe{
         height: 220vh;
     }
 
   }
   @media only screen and (max-height: 667px){
 
-    iframe{
+    #iframe{
         height: 240vh;
     }
 
   }
   @media only screen and (max-height: 600px){
 
-    iframe{
+    #iframe{
         height: 250vh;
     }
 
@@ -526,3 +526,99 @@ a{
 .navbar ul li a.piros:active {
   color: red;
 }
+
+/* (A) WRAPPER */
+.fullwrap {
+    position: relative; /* required for (c2) */
+    max-width: 200px; /* optional */
+  }
+   
+  /* (B) RESPONSIVE IMAGE */
+  .fullwrap img { width: 200px; height: 300px; }
+   
+  /* (C) CAPTION */
+  .fullcap {
+    /* (C1) DIMENSIONS */
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+   
+    /* (C2) POSITION */
+    position: absolute;
+    top: 0; left: 0;
+    text-align: center;
+    padding-top: 40%;
+   
+     /* (C3) COLORS */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 3px solid rgb(255, 0, 64);
+  }
+   
+  /* (D) SHOW/HIDE */
+  .fullcap {
+    visibility: none; opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .fullwrap:hover .fullcap {
+    visibility: visible; opacity: 1;
+  }
+  #jatekok li{
+      display: inline-block;
+      margin: 10px;
+  }
+  .jatekgomb a{
+      background-color: rgb(255, 0, 64);
+      color:white;
+      padding:15px;
+      font-weight: 600;
+      font-size: 15px;
+  }
+  .jatekgomb a:hover{
+      background-color: black;
+      color:white;
+      cursor:pointer;
+  }
+  #kateglink:hover{
+    color:rgb(255, 0, 64);
+  }
+  #vissza:hover{
+    color:rgb(255, 0, 64);
+  }
+  .vissza a{
+    background-color: rgb(255, 0, 64);
+    color:white;
+    padding:10px;
+    font-size: 30px;
+    margin-bottom:30px;
+}
+.vissza a:hover{
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+.jatekcucc {  display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.7fr 0.8fr 1.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "kep szoveg szoveg"
+      "video video video"
+      "letoltes letoltes letoltes";
+  }
+  
+  .kep { grid-area: kep; }
+  
+  .szoveg { grid-area: szoveg; }
+  
+  .video { grid-area: video; margin: 0 auto;}
+  
+  .letoltes { grid-area: letoltes; margin: 0 auto; margin-top: 50px; }
+  
+  #video{
+      width: 600px;
+      height: 350px;
+      border: 3px solid rgb(255, 0, 64);
+  }
+  
