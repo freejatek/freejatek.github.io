@@ -200,18 +200,27 @@ function menu(){
     
   }
   var cycle = 0; 
-var allBackgrounds = [ "./kepek/back.jpg",  
-					   "./kepek/back2.png"  
+var allBackgrounds = [ "./kepek/bg2.jpg",
+                       "./kepek/bg3.jpg",
+                       "./kepek/bg4.jpg",
+                       "./kepek/bg5.jpg",
+                       "./kepek/bg6.jpg",
+                       "./kepek/bg7.jpg",
+                       "./kepek/bg8.jpg",
+                       "./kepek/bg9.jpg",
+                       "./kepek/bg10.jpg",
+                       "./kepek/bg11.jpg",
+                       "./kepek/bg12.jpg"
  ]; 
  
 setInterval(function() { 
-	if (cycle < 2) { 
+	if (cycle < 9) { 
 		document.body.style.backgroundImage = "url('" + allBackgrounds[cycle] + "')"; 
 		cycle += 1; 
 	} else {  
 		cycle = 0; 
 	} 
-}, 10000); 
+}, 5000); 
 
 const menuItems = document.querySelectorAll('nav ul li a');
 
