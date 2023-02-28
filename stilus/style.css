@@ -566,3 +566,15 @@ a{
       display: inline-block;
       margin: 10px;
   }
+  .jatekgomb a{
+      background-color: rgb(255, 0, 64);
+      color:white;
+      padding:15px;
+      font-weight: 600;
+      font-size: 15px;
+  }
+  .jatekgomb a:hover{
+      background-color: black;
+      color:white;
+      cursor:pointer;
+  }
