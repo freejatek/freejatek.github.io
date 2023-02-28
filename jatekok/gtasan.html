@@ -62,7 +62,7 @@
                                 <iframe id="video" src="https://www.youtube.com/embed/ZaqpcybxUqs"> </iframe>
                             </div>
          
-                            <div class="letoltes">Letöltés
+                            <div class="letoltes">Letöltés: 
                                 <a id="letoltes" href="https://itorrents-igruha.org/download.php?ld=7211001000390135">Torrent</a>
                                 <a id="letoltes" href="https://uploadhaven.com/download/017dcf27a5692676e112e27a6e33c15d">Uploadhaven</a>
                                 <a id="letoltes" href="https://magyaritasok.hu/download/647">Magyarosítás</a>
@@ -81,31 +81,6 @@
         </div>
       
     </div>
-<script>
-    videos = document.querySelectorAll("video");
-for (var i = 0, l = videos.length; i < l; i++) {
-    var video = videos[i];
-    var src = video.src || (function () {
-        var sources = video.querySelectorAll("source");
-        for (var j = 0, sl = sources.length; j < sl; j++) {
-            var source = sources[j];
-            var type = source.type;
-            var isMp4 = type.indexOf("mp4") != -1;
-            if (isMp4) return source.src;
-        }
-        return null;
-    })();
-    if (src) {
-        var isYoutube = src && src.match(/(?:youtu|youtube)(?:\.com|\.be)\/([\w\W]+)/i);
-        if (isYoutube) {
-            var id = isYoutube[1].match(/watch\?v=|[\w\W]+/gi);
-            id = (id.length > 1) ? id.splice(1) : id;
-            id = id.toString();
-            var mp4url = "http://www.youtubeinmp4.com/redirect.php?video=";
-            video.src = mp4url + id;
-        }
-    }
-}
-</script>
+
 </body>
 </html>
