@@ -1,5 +1,5 @@
 @media only screen and (max-width: 800px){
-    body{height: 200vh;}
-    #nep{height: 200vh;}
-    iframe{height: 200vh;}
+    body{height: fit-content;}
+    #nep{height: fit-content;}
+    iframe{height: fit-content;}
 }
