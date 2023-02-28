@@ -341,7 +341,7 @@ button{
     }
     .container {
         display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: 10fr 10fr 0fr; 
         grid-template-rows: 1fr 1fr 1fr; 
         gap: 0px 0px; 
         grid-template-areas: 
@@ -602,6 +602,7 @@ a{
     grid-template-rows: 0.7fr 0.8fr 1.3fr;
     gap: 0px 0px;
     grid-auto-flow: row;
+ 
     grid-template-areas:
       "kep szoveg szoveg"
       "video video video"
@@ -610,17 +611,18 @@ a{
   
   .kep { grid-area: kep; }
   
-  .szoveg { grid-area: szoveg; }
+  .szoveg { grid-area: szoveg;   display: inline-block; }
   
   .video { grid-area: video; margin: 0 auto;}
   
   .letoltes { grid-area: letoltes; margin: 0 auto; margin-top: 50px; }
-  
+  @media only screen and (min-height: 750px){
   #video{
       width: 600px;
       height: 350px;
       border: 3px solid rgb(255, 0, 64);
   }
+}
 
   .letoltes a{
     background-color: rgb(255, 0, 64);
@@ -634,4 +636,16 @@ a{
     background-color: black;
     color:white;
     cursor:pointer;
+}
+@media only screen and (max-height: 750px){
+.jatekcucc{
+    display:inline-block;
+}
+.video video{
+    width: 0px;
+    height: 250px;
+}
+}
+section{
+    text-align: center;
 }
