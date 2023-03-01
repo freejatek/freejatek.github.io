@@ -51,6 +51,29 @@
         </footer>
 <script>
 
+	var input = document.getElementById("search-input");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // A gombora raclickel
+    document.getElementById("gomb").click();
+  }
+});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
   function search() {
     var input = document.getElementById("search-input").value.toLowerCase();
     var list = ["crossout", "cyberpunk 2077", "farming simulator 22","grand theft auto san andreas", "forza horizon 5", "fifa 23", "dying light 2", "elden ring", "hogwarts legacy", "metro exodus", "mortal kombat 11", "need for speed unbound", "portal 2", "rage 2", "red dead redemption 2", "resident evil 2", "slime rancher 2", "spiderman", "stray", "warface", "watch dogs 2"]; 
