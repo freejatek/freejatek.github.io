@@ -82,7 +82,7 @@ header{
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color: rgba(0, 0, 0, 0.830);
     color:white;
     border: 0px solid black;
 }
@@ -196,7 +196,7 @@ mark{
     padding-bottom: 20px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color:rgba(0, 0, 0, 0.829); 
 }
     #navbar-links {
         display:none;
@@ -223,7 +223,7 @@ mark{
     }
 }
 #gomb{
-    background-color:rgba(0, 0, 0, 0.719); ;
+    background-color:rgba(0, 0, 0, 0.829) ;
     padding:17px;
     border:none;
     border-radius: 25px;
@@ -403,7 +403,7 @@ button{
     z-index: 99; 
     border: none;
     outline: none; 
-    background-color:rgba(0, 0, 0, 0.719); 
+    background-color:rgba(0, 0, 0, 0.829); 
     color: white; 
     cursor: pointer; 
     padding: 15px; 
