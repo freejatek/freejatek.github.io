@@ -202,28 +202,34 @@
               }
               
             }
-            var cycle = 0; 
-          var allBackgrounds = [ "./kepek/bg2.jpg",
-                                 "./kepek/bg3.jpg",
-                                 "./kepek/bg4.jpg",
-                                 "./kepek/bg5.jpg",
-                                 "./kepek/bg6.jpg",
-                                 "./kepek/bg7.jpg",
-                                 "./kepek/bg8.jpg",
-                                 "./kepek/bg9.jpg",
-                                 "./kepek/bg10.jpg",
-                                 "./kepek/bg1.jpg"
-           ]; 
-           
-          setInterval(function() { 
-            if (cycle < 10) { 
-              document.body.style.backgroundImage = "url('" + allBackgrounds[cycle] + "')"; 
-              cycle += 1; 
-            } else {  
-              cycle = 0; 
-            } 
-          }, 5000); 
-          
+            var cycle = 0;
+            var isTransitioning = false;
+            var allBackgrounds = [
+            "./kepek/bg1.jpg",
+            "./kepek/bg2.jpg",
+            "./kepek/bg3.jpg",
+            "./kepek/bg4.jpg",
+            "./kepek/bg5.jpg",
+            "./kepek/bg6.jpg",
+            "./kepek/bg7.jpg",
+            "./kepek/bg8.jpg",
+            "./kepek/bg9.jpg",
+            "./kepek/bg1.jpg"
+            ];
+            
+            function changeBackground() {
+            if (!isTransitioning) {
+            isTransitioning = true;
+            setTimeout(function() {
+            document.body.style.backgroundImage = "url('" + allBackgrounds[cycle] + "')";
+            cycle = (cycle + 1) % allBackgrounds.length;
+            isTransitioning = false;
+            }, 1000); // 1 másodperces késleltetés
+            }
+            }
+            
+            setInterval(changeBackground, 5000); // 5 másodperces időzítő
+            
           const menuItems = document.querySelectorAll('nav ul li a');
           
           menuItems.forEach(item => {
