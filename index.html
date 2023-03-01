@@ -33,9 +33,11 @@
                 </div>
               </nav>
             <div id="szoveg">
-            <h1>Üdv az <div class="piros">oldalon!</div></h1>
+              <div id="igen">
+            <h1>Üdvözöllek a <br><div class="piros">honlapunkon!</div></h1>
+          </div>
             <p>
-            <a id="szovegg" href="" class="typewrite" data-period="2000" data-type='[ "Töltsd le és játssz!", "Játékok, ingyen, magyarítással", "Fizetős játékok ingyen", "Crackelt játékok" ]'>
+            <a id="szovegg" href="" class="typewrite" data-period="2000" data-type='[ "Töltsd le és próbáld ki!", "Játékok, ingyen, magyarítással", "Fizetős játékok ingyen", "Crackelt játékok" ]'>
                 <span class="wrap"></span>
               </a></p>
             <input type="text" name="ide" value="" id="search-input" placeHolder="Játék teljes neve:">
@@ -195,10 +197,8 @@
               if (x.style.display === "none") {
                 x.style.display = "block";
                 document.getElementById("navbar-links").style.marginTop = "20px";
-                document.getElementById("szoveg").style.paddingTop = "5vh";
               } else {
                 x.style.display = "none";
-                document.getElementById("szoveg").style.paddingTop = "17vh";
               }
               
             }
@@ -229,7 +229,7 @@
             }
             
             setInterval(changeBackground, 5000); // 5 másodperces időzítő
-            
+
           const menuItems = document.querySelectorAll('nav ul li a');
           
           menuItems.forEach(item => {

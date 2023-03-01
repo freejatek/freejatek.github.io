@@ -60,10 +60,15 @@ header{
     background-color: rgba(0, 0, 0, 0.507);
     height: 100vh;
 }
+
 #szoveg h1{
-    text-align: center;
+text-align: center;
+    line-height: 0.7;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.959), 0px 0px 15px rgba(0, 0, 0, 0.959);
     font-size: 60px;
+    margin-bottom: 10px;
 }
+
 #szoveg{
     color: white;
     text-align: center;
@@ -74,7 +79,7 @@ header{
     font-size: 30px;
 }
 #szoveg input{
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 17px;
     width: 22%;
     border-radius: 30px;
@@ -85,10 +90,12 @@ header{
     background-color: rgba(0, 0, 0, 0.830);
     color:white;
     border: 0px solid black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.918);
 }
 #szovegg{
     color:rgba(255, 255, 255, 0.932);
     position:static;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.959),0px 0px 15px rgba(0, 0, 0, 0.959) ;
 }
 #szoveg input:focus{
     border:2px solid rgb(255, 0, 64);
@@ -113,12 +120,22 @@ header{
     padding: 0 55px ;
     font-weight: bold;
     font-family: space;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.959), 0px 0px 15px rgba(0, 0, 0, 0.959);
 }
 mark{
     background-color: transparent;
     color:rgb(255, 0, 64);
 }
-
+#piros{
+    display: inline-block;
+    background-color: transparent;
+    color:rgb(255, 0, 64);
+}
+#szurke{
+    color:rgb(163, 163, 163);
+    display: inline-block;
+    background-color: transparent;
+}
 #navbar-links {
     height: 100%;
 }
@@ -144,6 +161,7 @@ mark{
     font-weight: bold;
     font-family: dexend;
     padding-top: 35px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.959),0px 0px 15px rgba(0, 0, 0, 0.959);
     
 }
 #navbar-links li a:hover{
@@ -184,19 +202,26 @@ mark{
         flex-direction: column;
         align-items: flex-start;
     }
-#logo {
-    margin-top: 20px;
-}
-    .toggle-button {
-        margin: 20px;
-        margin-top: 25px;
-        display: flex;
+
+    #logo {
+        margin-top: 20px;
     }
+        .toggle-button {
+            margin: 20px;
+            margin-top: 25px;
+            display: flex;
+        }
+
 .navbar{
+    position: fixed;
+    width:100%;
+    z-index: 100;
     padding-bottom: 20px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     background-color:rgba(0, 0, 0, 0.829); 
+    border-bottom: 3px solid rgb(255, 0, 64);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.918);
 }
     #navbar-links {
         display:none;
@@ -212,10 +237,13 @@ mark{
 
     #navbar-links ul li {
         text-align: center;
+        width:100%;
+        padding-left: 20px;
     }
 
     #navbar-links ul li a {
         padding: .5rem 1rem;
+        width:100%;
     }
 
     #navbar-links.active {
@@ -232,7 +260,7 @@ mark{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
     cursor:pointer;
-
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.918);
 }
 #gomb:hover{
     background-color: #0f0f0f;
@@ -249,7 +277,11 @@ mark{
         padding-top:25vh;
     }
 }
-
+@media (max-width: 1000px) {
+    #szoveg{
+        padding-top:35vh;
+    }
+}
 
 @media only screen and (max-width: 1128px){
 
@@ -374,6 +406,7 @@ button{
     height:180vh;
     resize: both;
     opacity: 0.9;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
 }
 
 ::-webkit-scrollbar {
@@ -409,6 +442,7 @@ button{
     padding: 15px; 
     border-radius: 10px;
     font-size: 18px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.918);
   }
   #gorget:hover{
     background-color: rgb(20, 20, 20);
@@ -424,6 +458,7 @@ button{
     margin-top:80px;
     opacity: 0.9;
     background-image: url('../kepek/htr.png');
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
   }
   footer h1{
     line-height: 130px;
@@ -446,7 +481,7 @@ button{
 .fooldal p{
     color:white;
     text-align: center;
-    max-width: 500px;
+    max-width: 650px;
     margin:0 auto;
 }
 .fooldal{
@@ -606,3 +641,6 @@ section{
     text-align: left;
 }
 
+.fooldal mark{
+    font-size: 40px;
+}
