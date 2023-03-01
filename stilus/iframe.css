@@ -1,16 +1,4 @@
-@media only screen and (max-width: 800px){
-    body{height: fit-content;}
-    #nep{height: fit-content;}
-    iframe{height: fit-content;}
- 
-}
-@media only screen and (max-width: 1000px){
-    body{height: fit-content;}
-    #nep{height: fit-content;}
-    iframe{height: fit-content;}
-    height:300vh;
- 
-}
+
 #iframe{
     height:300vh;
 }
