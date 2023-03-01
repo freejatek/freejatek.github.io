@@ -2,3 +2,13 @@
 #iframe{
     height:300vh;
 }
+
+
+@media only screen and (max-width: 1000px){
+    height:350vh;
+ 
+}
+@media only screen and (max-width: 800px){
+    height:400vh;
+ 
+}
