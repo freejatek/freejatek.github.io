@@ -192,19 +192,9 @@
           
           
           }
-          function menu(){
-              var x = document.getElementById("navbar-links");
-              if (x.style.display === "none") {
-                x.style.display = "block";
-                document.getElementById("navbar-links").style.marginTop = "20px";
-              } else {
-                x.style.display = "none";
-              }
-              
-            }
-            var cycle = 0;
-            var isTransitioning = false;
-            var allBackgrounds = [
+          var cycle = 0;
+          var isTransitioning = false;
+          var allBackgrounds = [
             "./kepek/bg1.jpg",
             "./kepek/bg2.jpg",
             "./kepek/bg3.jpg",
@@ -215,20 +205,28 @@
             "./kepek/bg8.jpg",
             "./kepek/bg9.jpg",
             "./kepek/bg1.jpg"
-            ];
-            
-            function changeBackground() {
+          ];
+          
+          function changeBackground() {
             if (!isTransitioning) {
-            isTransitioning = true;
-            setTimeout(function() {
-            document.body.style.backgroundImage = "url('" + allBackgrounds[cycle] + "')";
-            cycle = (cycle + 1) % allBackgrounds.length;
-            isTransitioning = false;
-            }, 1000); // 1 másodperces késleltetés
+              isTransitioning = true;
+              var img = new Image();
+              img.onload = function() {
+                document.body.style.setProperty('background-image', 'url(' + img.src + ')');
+                cycle = (cycle + 1) % allBackgrounds.length;
+                isTransitioning = false;
+                setTimeout(changeBackground, 5000); // 5 másodperces késleltetés
+              };
+              img.onerror = function() {
+                cycle = (cycle + 1) % allBackgrounds.length;
+                isTransitioning = false;
+                setTimeout(changeBackground, 5000); // 5 másodperces késleltetés
+              };
+              img.src = allBackgrounds[cycle];
             }
-            }
-            
-            setInterval(changeBackground, 5000); // 5 másodperces időzítő
+          }
+          
+          changeBackground();
 
           const menuItems = document.querySelectorAll('nav ul li a');
           
