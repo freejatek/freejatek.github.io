@@ -49,7 +49,8 @@
         <iframe id="iframe" src="fooldal.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" name="iframe"></iframe>
         
         <footer>
-          <h1>Még mindíg nincs itt semmi</h1>
+          <h1>Most már van itt valami:</h1>
+          <p>valami </p>
         </footer>
 
       
@@ -156,6 +157,17 @@
           
           
           
+          function menu(){
+            var x = document.getElementById("navbar-links");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+              document.getElementById("navbar-links").style.marginTop = "20px";
+            } else {
+              x.style.display = "none";
+            }
+            
+          }
+
           function go(){
               document.getElementById('legor').scrollIntoView();
           

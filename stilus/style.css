@@ -312,7 +312,7 @@ button{
 }
 
 .piros{
-    color:rgb(255, 0, 64);
+    color:rgb(255, 0, 64)!important;
     display:inline;
 }
 #logo:hover{
@@ -452,7 +452,7 @@ button{
   }
   footer{
     background-color: black;
-    height: 140px;
+    height: 20vh;
     width: 100%;
     border-top:5px solid rgb(255, 0, 64);
     margin-top:80px;
@@ -460,10 +460,17 @@ button{
     background-image: url('../kepek/htr.png');
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
   }
-  footer h1{
-    line-height: 130px;
+  footer p{
     color:white;
     text-align: center;
+    font-size: 25px;
+
+  }
+  footer h1{
+    margin-top: 20px;
+    color:white;
+    text-align: center;
+
     
   }
   #nep{
