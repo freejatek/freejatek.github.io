@@ -87,10 +87,10 @@ text-align: center;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.830);
+    background-color: rgba(0, 0, 0, 0.795);
     color:white;
     border: 0px solid black;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.918);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.918);
 }
 #szovegg{
     color:rgba(255, 255, 255, 0.932);
@@ -219,9 +219,9 @@ mark{
     padding-bottom: 20px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color:rgba(0, 0, 0, 0.829); 
+    background-color: rgba(0, 0, 0, 0.795);
     border-bottom: 3px solid rgb(255, 0, 64);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.918);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.918);
 }
     #navbar-links {
         display:none;
@@ -251,7 +251,7 @@ mark{
     }
 }
 #gomb{
-    background-color:rgba(0, 0, 0, 0.829) ;
+    background-color: rgba(0, 0, 0, 0.795);
     padding:17px;
     border:none;
     border-radius: 25px;
@@ -260,7 +260,7 @@ mark{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
     cursor:pointer;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.918);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.918);
 }
 #gomb:hover{
     background-color: #0f0f0f;
@@ -436,13 +436,13 @@ button{
     z-index: 99; 
     border: none;
     outline: none; 
-    background-color:rgba(0, 0, 0, 0.829); 
+    background-color: rgba(0, 0, 0, 0.795);
     color: white; 
     cursor: pointer; 
     padding: 15px; 
     border-radius: 10px;
     font-size: 18px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.918);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.918);
   }
   #gorget:hover{
     background-color: rgb(20, 20, 20);
