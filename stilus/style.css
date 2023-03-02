@@ -64,7 +64,7 @@ header{
 #szoveg h1{
 text-align: center;
     line-height: 0.7;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.959), 0px 0px 15px rgba(0, 0, 0, 0.959);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.959);
     font-size: 60px;
     margin-bottom: 10px;
 }
@@ -95,7 +95,7 @@ text-align: center;
 #szovegg{
     color:rgba(255, 255, 255, 0.932);
     position:static;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.959),0px 0px 15px rgba(0, 0, 0, 0.959) ;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.959) ;
 }
 #szoveg input:focus{
     border:2px solid rgb(255, 0, 64);
