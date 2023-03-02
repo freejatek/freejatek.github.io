@@ -651,3 +651,6 @@ section{
 .fooldal mark{
     font-size: 40px;
 }
+.jatekcucc img:hover{
+    border: 3px solid rgb(255, 0, 64);
+}
