@@ -327,7 +327,7 @@ button{
 .tartalom{
     background-color: rgb(0, 0, 0);
     color: white;
-    padding: 60px;
+    padding: 40px;
     font-weight: 40;
     font-size: 30px;
 
@@ -364,12 +364,12 @@ button{
       "bal bal jobb"; 
   }
   .jobb { 
-
     grid-area: jobb; 
 }
   .bal { 
     border-right: rgb(255, 0, 64) solid 5px;
     grid-area: bal; 
+  
 }
 
 @media only screen and (max-width: 900px){
@@ -660,58 +660,8 @@ a{
     color:white;
     cursor:pointer;
 }
-.jatekcucc {  display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 0.7fr 0.8fr 1.3fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
- 
-    grid-template-areas:
-      "kep szoveg szoveg"
-      "video video video"
-      "letoltes letoltes letoltes";
-  }
-  
-  .kep { grid-area: kep; }
-  @media only screen and(max-width: 740){
-    .szoveg{
-        display: inline-flex;
-    }
-  }
-  .szoveg { grid-area: szoveg;   display: inline-block; }
-  
-  .video { grid-area: video; margin: 0 auto;}
-  
-  .letoltes { grid-area: letoltes; margin: 0 auto; margin-top: 50px; }
-  @media only screen and (min-height: 750px){
-  #video{
-      width: 600px;
-      height: 350px;
-      border: 3px solid rgb(255, 0, 64);
-  }
-}
 
-  .letoltes a{
-    background-color: rgb(255, 0, 64);
-    color:rgb(0, 0, 0);
-    padding:10px;
-    font-size: 30px;
-    margin-bottom:30px;
-    display: inline-block;
-}
-.letoltes a:hover{
-    background-color: black;
-    color:white;
-    cursor:pointer;
-}
 @media only screen and (max-height: 750px){
-.jatekcucc{
-    display:inline-block;
-}
-.video video{
-    width: 0px;
-    height: 250px;
-}
 }
 section{
     text-align: center;
@@ -739,14 +689,14 @@ section{
  
 .jatekcuccos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap:100px;
+    grid-row-gap:50px;
   }
   
   .jatekkep { grid-area: 1 / 1 / 3 / 3; }
-  .jatekspec { grid-area: 1 / 3 / 3 / 6; }
+  .jatekspec { grid-area: 1 / 3 / 3 / 3; }
   .jatekvideo { grid-area: 3 / 1 / 5 / 3; }
   .jatekszoveg { grid-area: 3 / 3 / 5 / 6; }
   .letoltese { grid-area: 5 / 1 / 6 / 6; }
@@ -765,17 +715,22 @@ section{
       grid-column-gap: 0px;
       grid-row-gap: 10px;
     }
-  
+
+
     .jatekkep { grid-area: Jatekkep; }
     .jatekspec { grid-area: jatekspec; }
     .jatekvideo { grid-area: jatekvideo; }
     .jatekszoveg { grid-area: jatekszoveg; }
     .letoltese { grid-area: letoltese; }
+    .jatekspec{
+        text-align: center!important;
+    }
   }
   .jatekcuccos iframe{
-    width: 100%!important;
+    width: 90%!important;
     height: 90%!important;
   }
+
  
   .jatekspec{
     text-align: left;
@@ -795,4 +750,32 @@ section{
 }
 .jatekcuccos{
     padding:10px
+}
+@media only screen and (min-width: 1332px) {
+    .jatekszoveg p{
+        padding-left:20px!important;
+        padding-right:20px!important;
+    }
+}
+.jatekcuccos h3{
+        color: rgb(153, 153, 153);
+}
+.jatekvideo iframe{
+    margin-bottom: 180px;
+    border: 3px solid rgb(255, 0, 64);
+}
+.jatekszoveg{
+    padding:10px;
+    border-bottom: 3px solid rgb(255, 0, 64);
+    border-top: 3px solid rgb(255, 0, 64);
+}
+.jatekszoveg p{
+    font-size: 28px!important;
+    font-weight: 50;
+}
+.jatekvideo{
+    padding-bottom:40px;
+    padding-top: 10px;
+    border-bottom: 3px solid rgb(255, 0, 64);
+    border-top: 3px solid rgb(255, 0, 64);
 }
