@@ -405,69 +405,12 @@ button{
     display: block;
     height:180vh;
     opacity: 0.96;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
+    box-shadow: 0px 0px 60px rgb(0, 0, 0),0px 0px 60px rgb(0, 0, 0),0px 0px 60px rgb(0, 0, 0),0px 0px 60px rgb(0, 0, 0);
     resize: none;
-}
-#iframe1{
-    border: 0px black solid;
-    border-top:5px solid rgb(255, 0, 64);
-    border-bottom:5px solid rgb(255, 0, 64);
-    width: 100%;
-    display: block;
-    height:180vh;
-    opacity: 0.9;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
-    resize: none;
-}
-#iframe2{
-    border: 0px black solid;
-    border-top:5px solid rgb(255, 0, 64);
-    border-bottom:5px solid rgb(255, 0, 64);
-    width: 100%;
-    display: block;
-    height:180vh;
-    opacity: 0.9;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
-    resize: none;
-}
-#iframe3{
-    border: 0px black solid;
-    border-top:5px solid rgb(255, 0, 64);
-    border-bottom:5px solid rgb(255, 0, 64);
-    width: 100%;
-    display: block;
-    height:180vh;
-    opacity: 0.9;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
-    resize: none;
-}
-#iframe4{
-    border: 0px black solid;
-    border-top:5px solid rgb(255, 0, 64);
-    border-bottom:5px solid rgb(255, 0, 64);
-    width: 100%;
-    display: block;
-    height:180vh;
-    opacity: 0.9;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
-    resize: none;
-}
-#default-iframe{
-    border: 0px black solid;
-    border-top:5px solid rgb(255, 0, 64);
-    border-bottom:5px solid rgb(255, 0, 64);
-    width: 100%;
-    display: block;
-    height:180vh;
-
-    opacity: 0.9;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
-    resize: none;
+    background: rgba(0, 0, 0, 0.918);
 }
 
-@media only screen and (max-width: 1620px){
-    #default-iframe{height: 230vh;}
-}
+
 @media only screen and (max-width: 1620px){
     #iframe{height: 220vh;}
 }
@@ -538,7 +481,7 @@ button{
     margin-top:80px;
     opacity: 0.95;
     background-image: url('../kepek/htr.png');
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
+    box-shadow: 0px 0px 60px rgb(0, 0, 0),0px 0px 60px rgb(0, 0, 0),0px 0px 60px rgb(0, 0, 0),0px 0px 60px rgb(0, 0, 0);
   }
   footer p{
     color:white;
