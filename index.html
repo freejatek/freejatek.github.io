@@ -17,17 +17,17 @@
 
             <nav class="navbar" id="fent">
                 <div id="logo">Free<mark>Jatek</mark></div>
-                <div class="toggle-button" onclick="menu()">
+                <div class="hambigomb" onclick="menu()">
                   <span class="bar"></span>
                   <span class="bar"></span>
                   <span class="bar"></span>
                 </div>
-                <div id="navbar-links">
+                <div id="navigaciolinkek">
                   <ul>
-                    <li><a href="fooldal.html" class="piros" onClick="document.getElementById('legor').scrollIntoView(); btn()" target="iframe">Főoldal</a></li>
-                    <li><a  href="./kategoriak/nepszeru.html"  onClick="document.getElementById('legor').scrollIntoView(); btn()" target="iframe">Játékok</a></li>
-                    <li><a href="kapcsolat.html" onClick="document.getElementById('legor').scrollIntoView(); btn()" target="iframe">Kapcsolat</a></li>
-                    <li><a href="adatvedelem.html"  onClick="document.getElementById('legor').scrollIntoView(); btn()" target="iframe">Adatvédelem</a></li>
+                    <li><a href="fooldal.html" class="piros" onClick="document.getElementById('legor').scrollIntoView(), klikk()" target="iframe">Főoldal</a></li>
+                    <li><a  href="./kategoriak/nepszeru.html"  onClick="document.getElementById('legor').scrollIntoView(), klikk()" target="iframe">Játékok</a></li>
+                    <li><a href="kapcsolat.html" onClick="document.getElementById('legor').scrollIntoView(), klikk()" target="iframe">Kapcsolat</a></li>
+                    <li><a href="adatvedelem.html"  onClick="document.getElementById('legor').scrollIntoView(), klikk()" target="iframe">Adatvédelem</a></li>
                   </ul>
                 </div>
               </nav>
@@ -40,8 +40,8 @@
                 <span class="wrap"></span>
               </a></p>
             <input type="text" name="ide" value="" id="search-input" placeHolder="Játék teljes neve:">
-            <button id="gomb" onClick="search(), go()"><img src="./kepek/keresopiros.png" height="15px" width="auto"></button>
-            <button  id="gorget" title="Lefele" onClick="gorg()"><img src="./kepek/lenyilpiros.png" id="gorgokep" height="15px" width="auto"></button>
+            <button id="gomb" onClick="search(), go(), klikk()"><img src="./kepek/keresopiros.png" height="15px" width="auto"></button>
+            <button  id="gorget" title="Lefele" onClick="gorg(), klikk()"><img src="./kepek/lenyilpiros.png" id="gorgokep" height="15px" width="auto"></button>
         </div>
         </header>
         <div id="legor"> </div>
@@ -62,7 +62,7 @@
             audio.volume = 0.3;
 
 
-function btn(){
+function klikk(){
   const audio = document.getElementById("audio");
   audio.play();
 }
@@ -167,10 +167,10 @@ function btn(){
           
           
           function menu(){
-            var x = document.getElementById("navbar-links");
+            var x = document.getElementById("navigaciolinkek");
             if (x.style.display === "none") {
               x.style.display = "block";
-              document.getElementById("navbar-links").style.marginTop = "20px";
+              document.getElementById("navigaciolinkek").style.marginTop = "20px";
             } else {
               x.style.display = "none";
             }
