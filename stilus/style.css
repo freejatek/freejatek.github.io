@@ -492,7 +492,7 @@ button{
   }
   footer{
     background-color: black;
-    height: 20vh;
+    height: 100%;
     width: 100%;
     border-top:5px solid rgb(255, 0, 64);
     margin-top:80px;
@@ -504,9 +504,10 @@ button{
   }
   #footersz{
 float:left;
-padding:20px;
+background-color: #000000;
 color:rgba(255, 255, 255, 0.774);
-line-height: 2vh;
+padding:20px;
+width: 100%;
   }
   footer p{
     padding:20px;
@@ -520,8 +521,8 @@ line-height: 2vh;
     color:rgba(255, 255, 255, 0.87);
     text-align: center;
     border-bottom: solid 2px rgba(255, 255, 255, 0.87);
-    width:20%;
     margin:0 auto;
+    width:170px;
   }
   footer .footerese{
     margin:0 auto;
